@@ -1,23 +1,23 @@
 {
   "name": "inprocode-app",
   "private": true,
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "build": "react-router build",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc --build --noEmit",
-    "serve": "nodemon server.js"
+    "serve": "nodemon server.cjs"
   },
   "dependencies": {
     "@react-router/node": "^7.0.1",
     "@react-router/serve": "^7.0.1",
     "bootstrap": "^5.3.3",
+    "dotenv": "^16.4.7",
     "express": "^4.21.1",
     "isbot": "^5.1.17",
     "mongodb": "^6.11.0",
     "mongoose": "^8.8.3",
-    "nodemon": "^3.1.7",
     "pg": "^8.13.1",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.6",
@@ -31,6 +31,7 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "autoprefixer": "^10.4.20",
+    "nodemon": "^3.1.7",
     "postcss": "^8.4.49",
     "tailwindcss": "^3.4.15",
     "typescript": "^5.6.3",

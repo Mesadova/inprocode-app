@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import styled from "styled-components";
+import {styled} from "styled-components";
 
 const MainMenuContainer = styled.div`
     display: flex;
@@ -19,7 +19,6 @@ export default function MainMenu() {
                     <Navbar.Brand >Flights Catalog</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                    
                         <Nav className="me-auto">
                         <MainMenuContainer>
                         <NavLink
@@ -56,7 +55,6 @@ export default function MainMenu() {
                         </NavLink>
                         </MainMenuContainer>
                         </Nav>
-                   
                     </Navbar.Collapse>
                 </MainMenuContainer>
             </Navbar>
